@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:background="#d4383737"
+        android:id="@+id/lnLayout"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:hint="Họ tên"
+            app:met_maxCharacters="11"
+            android:textColor="@android:color/white"
+            android:text="Van Duc"
+            android:textColorHint="@android:color/white"
+            android:inputType="phone"
+            android:textSize="28sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.rengwuxian.materialedittext.MaterialEditText>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhoneNumber"
+            android:hint="Số điện thoại"
+            app:met_maxCharacters="11"
+            android:textColor="@android:color/white"
+            android:text="0982041582"
+            android:textColorHint="@android:color/white"
+            android:inputType="phone"
+            android:textSize="28sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.rengwuxian.materialedittext.MaterialEditText>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtAddress"
+            android:hint="Địa chỉ"
+            app:met_maxCharacters="50"
+            android:textColor="@android:color/white"
+            android:text="Hàm nghi-Mỹ Đình - Hà Nội"
+            android:textColorHint="@android:color/white"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.rengwuxian.materialedittext.MaterialEditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtDate"
+                android:hint="Ngày Tháng"
+                app:met_maxCharacters="11"
+                android:textColor="@android:color/white"
+                android:text="3/6/2018"
+                android:textColorHint="@android:color/white"
+                android:inputType="phone"
+                android:textSize="28sp"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                app:met_primaryColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                >
+            </com.rengwuxian.materialedittext.MaterialEditText>
+            <ImageView
+                android:id="@+id/imgDate"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:src="@drawable/calendar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNumber"
+            android:hint="Số tiền (vnđ)"
+            app:met_maxCharacters="33"
+            android:textColor="@android:color/white"
+            android:text="200.000.000 "
+            android:textColorHint="@android:color/white"
+            android:inputType="number"
+            android:textSize="28sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lãi suất ( %/năm)"
+            android:inputType="number"
+            android:text="5"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="28sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Ghi chú"
+            android:inputType="textImeMultiLine"
+            android:text="Cho vay nhưng không chịu trả lại !"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="18sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="111"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_margin="10dp"
+                android:text="Thêm"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btnAdd"
+                android:background="@drawable/backgroundbutton"
+                android:layout_width="120dp"
+                android:layout_height="50dp" />
+            <Button
+                android:layout_margin="10dp"
+                android:text="Hủy"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btnCancel"
+                android:background="@drawable/backgroundbutton"
+                android:layout_width="110dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

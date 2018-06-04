@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="1dp"
+    android:layout_height="90dp">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="same_level">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:orientation="horizontal"
+            android:background="#ebe6e6"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#000000">
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@+id/imgDelete"
+                android:id="@+id/tvDelete"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Delete"/>
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="2dp"
+                android:id="@+id/show_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#000000">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imgShow"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_add_circle_black_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvShow"
+                    android:layout_toRightOf="@+id/imgShow"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="Detail"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/front_layout"
+        android:weightSum="5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/money" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextReference"
+            android:text="05/06/2018"
+            android:layout_alignParentLeft="true"
+            />
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="Nguyễn Văn A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="21sp"
+                android:layout_alignLeft="@+id/tv_reference" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200.000.000"
+                    android:textColor="@color/colorTextReference"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:text="vnđ"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</android.support.v7.widget.CardView>
